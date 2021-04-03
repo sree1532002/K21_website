@@ -4,15 +4,15 @@
       background-size: cover;
     }
     #bg{
-      background-image: url("images/sliderbg1.jpg");
+      background-image: url("images/sliderbg.jpg");
       background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
     }
     #cardimg{
-      max-width: 1000px;
-      max-height: 450px;
+      max-width: 1500px;
+      max-height: 6000px;
       border-radius: 15px;
     }
     #menucard1{
