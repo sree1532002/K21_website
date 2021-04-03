@@ -1,0 +1,32 @@
+.footer{
+    background-color: #1e212d;
+    padding:40px;
+    color: #faf3e0
+}
+.foot{
+    background-color: #1e212d;
+    padding:40px;
+    color: #faf3e0
+}
+#footericons{
+text-decoration: none;
+margin-left: 10px;
+}
+#copy{
+    margin-left:570px;
+}
+#mapres{
+    height:300px;
+    width:600px;
+    margin-left: 410px;
+    padding:30px;
+}
+#icon1{
+    font-size:25px;margin:20px;margin-left:400px;
+}
+#icon2{
+    font-size:25px;margin:20px;margin-left:70px;
+}
+#icon3{
+    font-size:25px;margin:20px;margin-left:70px;
+}

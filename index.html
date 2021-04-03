@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Herbo Organic Farming</title>
+  <link rel="icon" href="images/logo.jpeg" type="image/icon type">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylecards.css">
+  <link rel="stylesheet" href="footer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="bg-img" class="float-container">
+        <div id = "t" class="float-child">
+            <img src = "images/logo.jpeg" id="image">
+        </div>
+        <div id = "p" class="float-child">
+            <ul class="nav justify-content-end">
+                <li class="nav-item" >
+                <a class="nav-link"  id = "item" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" id = "item" href="#bg">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id = "item" href="blog.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id = "item" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" id = "item" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <h1 id = "topic">Herbo Organic Farming</h1>
+    </div>
+    <div id="about" class = "grid-container">
+    <div class = "grid-child">
+        <h1 id="heading">Importance</h1>
+        
+        After the green revolution, agriculture in India was transformed. While this form of agriculture increased the yield of some crops to a great extent, it also gave rise to many more serious issues. The most talked about is the impact of conventional agriculture on the degradation of the ecosystem. In the study, Green Revolution in India: Environmental Degradation and Impact on Livestock 1, the authors show how soil fertility has decreased; toxic elements have entered the food chain from chemical residue applied in the crop field; and we have lost our crop diversity due to the cultivation of only three to four major crops (rice, wheat, and maize).
+</div>
+<div class = "grid-child">
+    <h1 id="heading">Organic Farming</h1>
+    It was only around 25 years after the green revolution, that the idea of sustainability entered the discourse of development, with the publication of the Brundtland Report (titled ‘Our Common Future’) in 1987. This report, produced by several countries for the United Nations, placed environmental issues firmly on the political agenda and proposed to see environment and development as a single issue. Gradually, people started talking about organic or natural farming as an alternative to conventional agriculture, as it could take care of the issues related to environmental degradation. Organic farming meant protecting soil fertility; maintaining the level of organic matter in soils; providing nutrients through microbial action instead of chemicals; using legumes to fulfil the nitrogen requirements of the soil; recycling organic matter such as crop residues and manures; managing diseases, pests, and weeds with natural predators; and maintaining diversity, among other things. </div>
+</div>
+    <div id="bg">
+        <br><br>
+        <h1 class="mm">Gallery</h1>
+    <div class="slideshow-container" id = "card">
+
+<div class="mySlides fade">
+  <img src="images/slider1.jpg" id="cardimg"style="width:100%;height:auto">
+
+</div>
+
+<div class="mySlides fade">
+  <img src="images/slider2.jpg" id="cardimg"style="width:100%;height:auto">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="images/slider3.jpg" id="cardimg"style="width:100%;height:auto">
+  
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+<br><br>
+<button type="button" class="btn btn-success" id="moremenu"><a href="menu.php" id="menubutton">More...</a></button>
+<br>
+<br>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div class = "footer" id="contact">
+  <i class="fa fa-phone" id="icon1"></i><a id="footericons" href="#">10, Adyar, Chennai</a>
+  <i class="fa fa-map-marker" id="icon2"></i><a id="footericons" href="#">+91 82378 29732</a>
+  <i class="fa fa-envelope" id="icon3"></i><a id="footericons" href="mailto:ab@gmail.com">herboorganic@gmail.com</a><br>
+  <a href="https://www.google.com/search?tbs=lf:1,lf_ui:1&tbm=lcl&q=location+anna+university&rflfq=1&num=10&ved=2ahUKEwj9ke3a4vXuAhUUOSsKHUGAC0gQtgN6BAgTEAc#rlfi=hd:;si:;mv:[[13.0262271,80.2418169],[13.005884799999999,80.20306529999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3,lf:1,lf_ui:1">
+  <img src="images/map.jpeg" alt="map" id="mapres"></a>
+<p id="copy">@Copyright 2021, Herbo Organic Farming</p><br><br>
+</div>
+</body>
+</html>
