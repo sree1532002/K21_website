@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Gallery</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="img/favicon.ico" rel="icon">
+    </head>
+<style>.template
+    {
+        width:31.3%;
+        padding:1%;
+        float: left;
+         position: relative;
+  
+    }
+    .template:hover
+    {
+        background-color: #1FA12E;
+  
+    }
+     .t_image
+    {
+        width:100%;
+        height: 20vw;
+
+    }
+     .template:hover .t_image
+    {
+ 
+        opacity: 0;
+  transition:opacity 1s;
+    }
+    .template:hover p
+    {
+    	position: absolute;
+  top: 40%;
+  bottom: 20%;
+  left: 30%;
+  right: 10%;
+    	visibility: visible;
+  opacity: 1;
+  z-index:3;
+  color: black;
+
+    }
+    p
+    {
+    	
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+    }
+</style>
+<body>
+	 <div class="template">
+	 	<p >Our potato farm!</p>
+        <img src="img/img5.jpg" class="t_image">
+        
+    </div>
+    <div class="template">
+    	<p >Out potato farm!</p>
+        <img src="img/img6.png" class="t_image">
+        
+    </div>
+    <div class="template">
+    	 <p >Out potato farm!</p>
+        <img src="img/img7.jpg" class="t_image">
+       
+    </div>
+    <div class="template">
+    	<p >Our main motto is to make food as medicine! We strive to achieve it!</p>
+        <img src="img/img8.jpg" class="t_image">
+        
+    </div>
+    <div class="template">
+    	<p >Our fresh vegetables. Contact us for more details</p>
+        <img src="img/img2.jpg" class="t_image">
+        
+    </div>
+    <div class="template">
+    	<p >Our fresh vegetables. Contact us for more details</p>
+        <img src="img/img1.jpg" class="t_image">
+        
+    </div>
+</body>
